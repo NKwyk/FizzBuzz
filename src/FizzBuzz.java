@@ -7,7 +7,7 @@ class FizzBuzz {
         int limit = 100;
         int counter = 0;
         while (counter < limit) {
-            counter = getCounter(counter);
+            counter = doFizzBuzz(counter);
         }
 //        for (int i = 0; i < 100; i = i + 15) {
 //
@@ -35,7 +35,7 @@ class FizzBuzz {
 //            }
         }
 
-    private static int getCounter(int counter) {
+    public static int doFizzBuzz(int counter) {
         // Find out which numbers divide i.
         boolean divisibleBy3 = counter % 3 == 0;
         boolean divisibleBy5 = counter % 5 == 0;
